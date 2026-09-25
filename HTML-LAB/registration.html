@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <h2>Student Registration Form</h2>
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+            <label for="studentid">Student ID:</label>
+            <input type="text" id="studentid" name="studentid" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <div>
+            <label for="program">Program of Study:</label>
+            <select id="program" name="program" required>
+                <option value="" disabled selected>Select your program...</option>
+                <option value="CS">Computer Science</option>
+                <option value="IT">Information Technology</option>
+                <option value="IS">Information Systems</option>
+                <option value="SE">Software Engineering</option>
+            </select>
+        </div>
+        <div>
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="coding" name="hobbies" value="Coding">
+                <label for="coding">Coding</label>
+
+                <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+                <label for="gaming">Gaming</label>
+
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+            </div>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your full street address" required maxlength="150"></textarea>
+        </div>
+        <div>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Any special requirements or notes?" maxlength="300"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+</body>
+</html>
