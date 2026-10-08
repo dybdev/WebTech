@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Personal Web Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">HOME</a> |
+            <a href="about.html">ABOUT</a> |
+            <a href="education.html">EDUCATION</a> |
+            <a href="skills.html">SKILLS</a> |
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Thank you for visiting my portfolio! You can email me at <a href="mailto:davericoc@gmail.com">davericoc@gmail.com</a> or visit my <a href="https://github.com/dybdev" target="_blank">GitHub profile</a>.</p>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="contact.html" method="get">
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="reason">Reason for Contacting:</label><br>
+                    <select id="reason" name="reason">
+                        <option value="question">Question</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    Preferred Reply:<br>
+                    <input type="radio" id="reply-email" name="reply" value="email" checked>
+                    <label for="reply-email">Email</label>
+                    <input type="radio" id="reply-none" name="reply" value="none">
+                    <label for="reply-none">No reply needed</label>
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Send me updates about new projects</label>
+                </p>
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Daverico Lloyd Cayabyab | Final Lab: Mini HTML Website Project</p>
+    </footer>
+</body>
+</html>
