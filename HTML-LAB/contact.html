@@ -1,20 +1,46 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact | Daverico Lloyd Cayabyab</title>
 </head>
 <body>
     <nav aria-label="Main navigation">
         <a href="index.html">HOME</a> |
         <a href="about.html">ABOUT</a> |
+        <a href="skills.html">SKILLS</a> |
         <a href="contact.html" aria-current="page">CONTACT</a>
     </nav>
-    <h1>Contact Me</h1>
-    <p>Thank you for visiting my personal website.</p>
-    <!-- Replace the placeholder with contact information you want to share. -->
-    <p>Email: davericoc@gmail.com</p>
-    <p><a href="links.html">View the Links and Navigation activity</a></p>
+    <main>
+        <h1>Contact Me</h1>
+        <p>Thank you for visiting my personal website. You can email me at <a href="mailto:davericoc@gmail.com">davericoc@gmail.com</a>.</p>
+        <h2>Contact Form</h2>
+        <p>This is a practice form for my HTML activity. It is not connected to a message delivery service.</p>
+        <!-- Connect the form action to a server endpoint to enable message delivery. -->
+        <form action="contact.html" method="get">
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required>
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="30" required></textarea>
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+        <p><a href="links.html">View the Links and Navigation activity</a></p>
+    </main>
+    <footer>
+        <p>Daverico Lloyd Cayabyab | Personal Profile Website</p>
+    </footer>
 </body>
 </html>
